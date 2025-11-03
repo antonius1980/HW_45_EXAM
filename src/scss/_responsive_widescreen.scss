@@ -1,0 +1,30 @@
+@use "include" as *;
+
+//Default styles without media queries - Resolutions for widescreen
+
+//Resolutions up from 1400px ($xxl)
+@media screen and (min-width: $xxl) {
+	.container {
+		width:100%;
+		max-width: $container-width-max;
+		padding-inline: 0;
+	}
+}
+
+//Resolutions below starting from 1399.99px ($xxl-min)
+@media screen and (max-width: $xxl-min) {
+
+}
+
+//Resolutions below starting from 1199.99px ($xl-min)
+@media screen and (max-width: $xl-min) {
+	
+	.nav-menu {
+		margin-right: 20px;
+		column-gap: 30px;
+		&__link {
+			padding-left: 15px;
+		}
+	}
+
+}

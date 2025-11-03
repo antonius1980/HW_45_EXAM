@@ -1,0 +1,32 @@
+@use "vars" as *;
+
+// @extend %gradiend-bg;
+%gradiend-bg {
+	background: linear-gradient(218deg, $accent-color-secondary 0%,  $accent-color-primary 100%) ;	
+}
+
+%arrows-before {
+	content: "\f104";
+	font-family: "Font Awesome 6 Free"; 
+	font-weight: 900;
+	font-size: 1.0rem;
+	color: $light-color-primary;
+}
+
+%next-arrow-before {
+	content: "\f105";
+}
+
+%screen-width-max {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+%limit-lines-2 {
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+

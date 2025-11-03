@@ -1,0 +1,52 @@
+@use "include" as *;
+
+//Resolutions from ($sm) 576px to 767.99px ($md-min)
+@media screen and (min-width: $sm) and (max-width: $md-min) {
+
+}
+
+//Resolutions below starting from 575.99px ($sm-min)
+@media screen and (max-width: $sm-min) {
+
+	.container {
+		padding-inline: 25px;
+	}
+
+	.hamburger-toggle {
+		position: absolute;
+		top: 10px;
+		right: 25px;
+	}
+
+	.logo-block {
+		&__img {
+			min-width: auto;
+			max-width: calc(100% - 50px);
+		}
+	}
+
+	.nav-menu {
+
+		&__item {
+		}
+		&__link {
+			padding: 25px 3vw;
+			font-size: 1.6rem;
+			&::before {
+				left:10vw;
+			}
+		}
+		&--mob-visible {
+			width: 100vw;
+			max-width: 100%;
+			right: 0px;
+			top: -10px;
+		}
+	}
+
+}
+
+//Resolutions below starting from 359.99px ($xs-min)
+@media screen and (max-width: $xs-min) {
+
+}
