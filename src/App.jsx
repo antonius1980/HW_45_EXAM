@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
-import './App.css'
+import './App.scss'
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from '../layouts/Header';
 import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
-import '../App.css';
+//import '../App.css';
 
 function Home() {
   // const [todos, setTodos] = useState([]);
