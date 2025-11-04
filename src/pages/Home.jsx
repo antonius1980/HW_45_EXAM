@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
-import Header from '../layouts/Header';
+//import Header from '../layouts/Header';
 import TodoForm from '../components/TodoForm';
 import TodoList from '../components/TodoList';
 //import '../App.css';
@@ -124,7 +124,7 @@ function Home() {
 
   return (
             <main>
-                <title>My Site: Home</title>
+                <title>My Third Exam React App - Home</title>
                 
                 <meta name="author" content="Anton Skrypnychenko" />
                 <meta

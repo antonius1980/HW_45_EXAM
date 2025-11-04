@@ -1,29 +1,26 @@
-import { NavLink, Link } from 'react-router-dom';
+import websiteLogo from '../assets/img/logo.svg'
 
-const setActive = ({isActive}) => isActive ? 'active-link' : '';
-
+import HamburgerToggle from '../components/HamburgerToggle';
+import NavMenu from '../components/NavMenu';
+import SocialMedia from '../components/SocialMedia';
 
 function Header() {
     return (
-        <header className="header">
-            <nav className="mb-5">
-                <div className="flex justify-between bg-gray-400">
-
-                    {/* <a href="/" className="brand-logo">React Movies</a> */}
-                    <Link to="/" className="">React Todo</Link>
-
-                    <ul id="nav-mobile" className="">
-                        <li>
-                            {/* <a href="/">Home</a> */}
-                            <NavLink to='/' className={setActive}>Home</NavLink>
-                        </li>
-                        <li>
-                            {/* <a href="/about">About Me</a> */}
-                            <NavLink to='/about' className={setActive}>About Me</NavLink>
-                        </li>
-                    </ul>
+        <header className="header top-header">
+            <div className="container top-header__container">
+                <div className="top-header__block logo-block">
+                    <a href="./" className="logo-block__link">
+                        <img className="logo logo-block__img" src={websiteLogo} alt="Logo image"/>
+                    </a>
                 </div>
-            </nav>
+                <nav className="nav top-header__block top-header__nav">
+                    <HamburgerToggle />
+                    <NavMenu />
+                </nav>
+                <div className="top-header__block top-header-socials">
+                    <SocialMedia />
+                </div>
+            </div>
         </header>
     )
 }
